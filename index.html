@@ -1,21 +1,59 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Praveen chand Kasarla</title>
-		<base href="/portfolio/" />
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1" />
 
-		<link rel="stylesheet" href="styles/vendor.css" />
-		<link rel="stylesheet" href="styles/app.css" />
-		
-		<script>window.module = 'aot';</script>
-	</head>
+<head>
+	<title>Praveen chand Kasarla</title>
+	<base href="/emgcms/Angular2Demo/NgPortfolio/dist/" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	 crossorigin="anonymous">
 
-	<body>
-		<div class="page">
+	<link rel="stylesheet" href="styles/vendor.css" />
+	<link rel="stylesheet" href="styles/app.css" />
+	
+	<script>window.module = 'aot';</script>
+	<style>
+		.bgimg-1,
+		.bgimg-2,
+		.bgimg-3 {
+			position: relative;
+			opacity: 0.65;
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.bgimg-1 {
+			background-image: url("../imgs/home.jpg");
+			min-height: 100%;
+			opacity: 1.65;
+		}
+
+		.bgimg-2 {
+			background-image: url("../imgs/portfolio.jpg");
+			min-height: 100%;
+		}
+
+		.bgimg-3 {
+			background-image: url("../imgs/contacts.jpg");
+			min-height: 100%;
+		}
+		.row {
+    		 margin-right: 0px; 
+    		 margin-left: 0px; 
+		}
+	</style>
+</head>
+
+<body class="bgimg-1">
+	<div class="page container">
+		<div class="container-fluid">
 			<app></app>
 		</div>
-		<script src="src/app.min.js"></script>
-	</body>
+	</div>
+	<script src="src/app.min.js"></script>
+</body>
+
 </html>
